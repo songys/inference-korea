@@ -13,6 +13,8 @@ quantization, model parallelism, and deployment.
 
 Members will take turns presenting book chapters and papers.
 
+We are also planning individual projects and hands-on sessions.
+
 ## Timetable
 
 The website includes the 10-session timetable from October 24 to December 26,

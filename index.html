@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="Inference Korea is a study community focused on inference engineering: how to run AI models efficiently and reliably.">
+  <meta property="og:title" content="Inference Korea">
+  <meta property="og:description" content="A study community focused on inference engineering, with planned weekly discussions of book chapters and research papers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://songys.github.io/inference-korea/">
+  <link rel="canonical" href="https://songys.github.io/inference-korea/">
+  <title>Inference Korea</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #1d1d1f; background: #fafafa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; -webkit-font-smoothing: antialiased; }
+    .wrap { width: min(800px, calc(100% - 48px)); margin-inline: auto; }
+    header { border-bottom: 1px solid #e5e5e7; }
+    header p { margin: 0; padding-block: 23px; font-size: 15px; font-weight: 600; }
+    main { padding-block: 88px 96px; }
+    h1 { margin: 0 0 28px; font-size: clamp(40px, 7vw, 58px); font-weight: 650; letter-spacing: -.045em; line-height: 1.12; }
+    .intro { font-size: 23px; color: #515158; line-height: 1.6; margin: 0; }
+    section { margin-top: 52px; padding-top: 32px; border-top: 1px solid #dedee3; }
+    h2 { font-size: 22px; font-weight: 600; letter-spacing: -.025em; margin: 0 0 18px; }
+    section p { font-size: 17px; line-height: 1.8; color: #515158; margin: 0 0 16px; }
+    section p:last-child { margin-bottom: 0; }
+    cite { font-style: italic; }
+    a { color: #0066cc; text-underline-offset: 3px; }
+    a:focus-visible, summary:focus-visible, .timetable-scroll:focus-visible { outline: 3px solid #0066cc; outline-offset: 4px; }
+    .timetable-note { font-size: 14px; }
+    .timetable-scroll { overflow-x: auto; margin-top: 24px; border: 1px solid #dedee3; border-radius: 14px; background: #fff; }
+    .timetable { width: 100%; min-width: 650px; border-collapse: collapse; text-align: left; font-size: 14px; line-height: 1.6; }
+    .timetable caption { text-align: left; padding: 16px; color: #515158; font-size: 13px; }
+    .timetable th, .timetable td { padding: 16px; border-top: 1px solid #dedee3; vertical-align: top; }
+    .timetable thead th { background: #f5f5f7; font-size: 12px; font-weight: 600; }
+    .timetable tbody th { font-weight: 500; }
+    .timetable td:nth-child(2) { white-space: nowrap; }
+    .timetable td:nth-child(3) { width: 32%; }
+    .timetable td:last-child { width: 42%; }
+    .timetable summary { cursor: pointer; color: #0066cc; }
+    .timetable dl { margin: 16px 0 0; }
+    .timetable dt { font-weight: 600; font-size: 12px; margin-bottom: 5px; }
+    .timetable dd { margin: 0 0 16px; color: #515158; font-size: 13px; overflow-wrap: anywhere; }
+    .timetable dd:last-child { margin-bottom: 0; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    @media (max-width: 540px) { main { padding-block: 56px 64px; } .intro { font-size: 20px; } section { margin-top: 38px; padding-top: 26px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><p>Inference Korea</p></div></header>
+  <main class="wrap">
+    <h1>Inference Korea</h1>
+    <p class="intro">Inference Korea is a study community focused on inference engineering: how to run AI models efficiently and reliably.</p>
+    <section aria-labelledby="study-format">
+      <h2 id="study-format">Study format</h2>
+      <p>We plan to meet weekly to discuss <cite>Inference Engineering</cite> by Patrick Kiely and related research papers, covering topics such as GPU architecture, inference engines, quantization, model parallelism, and deployment.</p>
+      <p>Members will take turns presenting book chapters and papers.</p>
+    </section>
+    <section aria-labelledby="timetable-title">
+          <h2 id="timetable-title">Study timetable</h2>
+          <p class="timetable-note">Every Saturday at 8:00 PM KST (tentative).</p>
+          <p class="timetable-note">Primary textbook: Kiely, P. (2026). <cite>Inference Engineering</cite>. Baseten Books.</p>
+          <div class="timetable-scroll" role="region" aria-labelledby="timetable-title" tabindex="0">
+            <table class="timetable">
+              <caption>Inference Korea: October 24 to December 26, 2026</caption>
+              <thead><tr><th scope="col">Session</th><th scope="col">Date</th><th scope="col">Topic</th><th scope="col">Session details</th></tr></thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><time datetime="2026-10-24">2026-10-24</time></td>
+                  <td>Inference Concepts and Performance Evaluation</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 1</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 0 Inference: entire chapter; Chapter 1 Prerequisites: all of Sections 1.1–1.4</dd>
+                      <dt>Presenters</dt><dd>Book: Youngsook Song, Paper: Hyunseok Cho</dd>
+                      <dt>Chapter overview</dt><dd>Distinguish training from inference and explain why latency, throughput, and quality must be considered together when selecting a model.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2406.19314v2">LiveBench: LiveBench: A Challenging, Contamination-Limited LLM Benchmark</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2025/315/">Apple: Get started with MLX for Apple silicon</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><time datetime="2026-10-31">2026-10-31</time></td>
+                  <td>Neural Networks and the Language Model Generation Process</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 2</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 2 Models: first half (introduction and Sections 2.1–2.2)</dd>
+                      <dt>Presenters</dt><dd>Book: Gapjin Kwon, Paper: Youngsook Song</dd>
+                      <dt>Chapter overview</dt><dd>Explain the flow of tokenization, prefill, and decoding, and the role of attention.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/1706.03762v7">Transformer: Attention Is All You Need</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2025/298/">Apple: Explore large language models on Apple silicon with MLX</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><time datetime="2026-11-07">2026-11-07</time></td>
+                  <td>Image Generation and Inference Performance Bottlenecks</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 3</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 2 Models: second half (Sections 2.3–2.5)</dd>
+                      <dt>Chapter overview</dt><dd>Distinguish cases where compute performance or memory bandwidth limits inference speed.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2205.14135v2">FlashAttention: FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2025/315/">Apple: Get started with MLX for Apple silicon</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><time datetime="2026-11-14">2026-11-14</time></td>
+                  <td>GPU Architecture and Inference Execution Environments</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 4</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 3 Hardware: entire chapter (introduction and Sections 3.1–3.5)</dd>
+                      <dt>Chapter overview</dt><dd>Distinguish GPU compute performance, memory capacity, and memory bandwidth, and relate them to the choice of execution environment.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/Archive/EECS-2008-134.pdf">Roofline: Roofline: An Insightful Visual Performance Model for Floating-Point Programs and Multicore Architectures</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2025/315/">Apple: Get started with MLX for Apple silicon (Review)</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td><time datetime="2026-11-21">2026-11-21</time></td>
+                  <td>Inference Software and Performance Measurement</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 5</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 4 Software: entire chapter (introduction and Sections 4.1–4.5)</dd>
+                      <dt>Presenters</dt><dd>Book: , Paper: Gapjin Kwon</dd>
+                      <dt>Chapter overview</dt><dd>Distinguish the roles of frameworks, inference engines, and servers, and outline the conditions required for performance measurement.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2309.06180v1">PagedAttention / vLLM: Efficient Memory Management for Large Language Model Serving with PagedAttention</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://www.youtube.com/watch?v=fcgPYo3OtV0">Stanford CS336 2025: Lecture 10: Inference</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td><time datetime="2026-11-28">2026-11-28</time></td>
+                  <td>Quantization and Speculative Decoding</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 6</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 5 Techniques: first half (introduction and Sections 5.1–5.2)</dd>
+                      <dt>Presenters</dt><dd>Book: Gapjin Kwon, Paper: </dd>
+                      <dt>Chapter overview</dt><dd>Explain the principles of quantization and speculative decoding, and compare speed, memory use, and quality.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2410.05229v2">GSM-Symbolic: GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2025/298/">Apple: Explore large language models on Apple silicon with MLX</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td><time datetime="2026-12-05">2026-12-05</time></td>
+                  <td>Caching and Model Parallelism</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 7</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 5 Techniques: second half (Sections 5.3–5.5)</dd>
+                      <dt>Presenters</dt><dd>Book: Joeun Park, Paper:</dd>
+                      <dt>Chapter overview</dt><dd>Explain the purposes of and differences between caching, model parallelism, and disaggregation.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2312.07104v2">SGLang: SGLang: Efficient Execution of Structured Language Model Programs</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://www.youtube.com/watch?v=fcgPYo3OtV0">Stanford CS336 2025: Lecture 10: Inference</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td><time datetime="2026-12-12">2026-12-12</time></td>
+                  <td>Models and Inference Methods by Input and Output Modality</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 8</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 6 Modalities: entire chapter (introduction and Sections 6.1–6.6)</dd>
+                      <dt>Presenters</dt><dd>Book: Sangseon Ahn, Paper: </dd>
+                      <dt>Chapter overview</dt><dd>Explain how processing workflows and performance metrics differ across input and output modalities such as text, images, and audio.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2304.08485v2">LLaVA: Visual Instruction Tuning</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td><time datetime="2026-12-19">2026-12-19</time></td>
+                  <td>Service Deployment and Resource Scaling Based on Request Volume</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 9</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 7 Production: first half (introduction and Sections 7.1–7.2)</dd>
+                      <dt>Chapter overview</dt><dd>Distinguish the roles of batching and autoscaling, and explain the relationship between waiting time, throughput, and resource use.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://www.usenix.org/system/files/osdi22-yu.pdf">Orca: Orca: A Distributed Serving System for Transformer-Based Generative Models</a></dd>
+                      <dt>Additional video</dt><dd><a href="https://www.youtube.com/watch?v=fcgPYo3OtV0">Stanford CS336 2025: Lecture 10: Inference</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td><time datetime="2026-12-26">2026-12-26</time></td>
+                  <td>Reliable Inference Service Operations and Comprehensive Review</td>
+                  <td><details>
+                    <summary>View details<span class="visually-hidden"> for session 10</span></summary>
+                    <dl>
+                      <dt>Textbook chapters and sections</dt><dd>Inference Engineering.pdf | Chapter 7 Production: second half (Sections 7.3–7.6); review of key connections across Chapters 0–7</dd>
+                      <dt>Chapter overview</dt><dd>Explain the workflow from model selection through deployment and operations, considering quality, performance, cost, and reliability together.</dd>
+                      <dt>Reference paper</dt><dd><a href="https://arxiv.org/pdf/2406.13352v3">AgentDojo: AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents</a></dd>
+                    </dl>
+                  </details></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </section>
+  </main>
+</body>
+</html>
